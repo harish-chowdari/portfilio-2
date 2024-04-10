@@ -1,0 +1,85 @@
+.skills{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    padding: 50px 0px;
+    background-color: rgb(17, 16, 16);
+    color: white;
+    border-top: 1px solid gray;
+    border-bottom: 1px solid gray;
+}
+
+.icons{
+    padding: 0px 10px;
+    padding-top: 55px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    align-items: center;
+    width: 100%;
+    gap: 40px;
+    max-width: 900px;
+    
+
+}
+
+.icondiv{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 15px;
+}
+
+.icondiv svg{
+    border-radius: 20%;
+    padding: 10px;
+    width: 100px;
+    height: 100px;
+    background-color: rgb(68, 66, 66);
+    cursor: pointer;
+}
+
+
+    
+
+@media screen and (max-width:500px) {
+    .skills{
+        padding: 40px 0px;
+    }
+    
+    .icons{
+        padding: 0px 10px;
+        padding-top: 40px;
+        
+        gap: 0px;
+        max-width: 500px;
+        justify-content: space-evenly;
+        
+    
+    }
+    
+    .icondiv{
+        gap: 5px;
+        margin-bottom: 20px;
+        width: 100px;
+    }
+    
+    .icondiv svg{
+        border-radius: 20%;
+        padding: 8px;
+        width: 60px;
+        height: 60px;
+        display: flex;
+        align-items: center;
+        
+    }
+
+    .icondiv p{
+        font-size: 0.9rem;
+    }
+    
+}
+
+

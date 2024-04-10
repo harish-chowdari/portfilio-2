@@ -1,0 +1,83 @@
+.main{
+
+    border-top: 1px solid gray;
+    background-color: rgb(17, 16, 16);
+}
+
+.container{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    padding-left: 30%;
+}
+
+.main h1{
+    text-align: center;
+    margin: 20px;
+    margin-top: 40px;
+    color: white;
+}
+
+
+.contact{
+    color: white;
+    
+    padding: 50px 0px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 30px;
+    gap: 20px;
+} 
+
+
+
+.TextFields{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 20px;
+    margin-left: 0px;
+    
+}
+
+.NameField{
+    width: 120%;
+}
+
+.emailField{
+    width: 120%;
+    
+}
+
+
+.textAreaWrapper{
+    width: 50%;
+}
+
+.textAreaField{
+    height: 25vh;
+    font-size: 1rem;
+}
+
+
+
+.textAreaField::placeholder {
+    color: #2196f3; 
+  }
+  
+
+.textAreaField:focus,
+.textAreaField:hover {
+  border-color: #2196f3;
+}
+
+.errorMessage{
+    color: red;
+    font-size: 0.8rem;
+    margin: 0px;
+    margin-left: 30px;
+}
+
+  

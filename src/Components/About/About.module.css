@@ -1,0 +1,148 @@
+/* About section container */
+.about {
+    background-color: rgb(17, 16, 16);
+    padding: 40px 0px;
+    text-align: center; /* Center text */
+  }
+  
+  /* About Me heading */
+  .about h2 {
+    color: white;
+    font-size: 2.5rem; /* Increase font size */
+  }
+  
+  /* Image */
+  .image {
+    width: 300px;
+    height: 300px;
+    border-radius: 50%; /* Make image circular */
+    border: 5px solid white; /* Add border */
+    box-shadow: 0px 0px 15px rgba(255, 255, 255, 0.5); /* Add shadow */
+  }
+  
+  /* About text container */
+  .abouttext {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 40px;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 30px;
+  }
+  
+  /* Right side (text) */
+  .right {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+  
+  /* Paragraph styles */
+  .right p {
+    background-color: rgba(38, 40, 41, 0.8); /* Semi-transparent background */
+    color: white;
+    padding: 15px;
+    border-radius: 10px;
+    max-width: 450px;
+    font-size: 1.2rem; /* Adjust font size */
+    line-height: 1.6; /* Increase line height */
+    animation: fadeInUp 1s ease forwards; /* Fade-in animation */
+    text-indent: 50px;
+    text-align: justify;
+    
+  }
+
+  .right p{
+    background-image: linear-gradient(to right ,  rgba(133, 148, 153, 0.425) 0%, rgb(255, 255, 255, 0));
+    background-size: 0% 100%;
+  transition: 0.4s;
+  background-repeat: no-repeat;
+  }
+
+  
+
+  .right p:hover{
+    background-size: 100% 100%;
+  }
+
+  
+  /* Keyframes for fade-in animation */
+  @keyframes fadeInUp {
+    from {
+      opacity: 0;
+      transform: translateY(20px); /* Move up slightly */
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0); /* Return to original position */
+    }
+  }
+
+  
+
+
+  @media screen and (max-width:1024px) {
+
+.about h2 {
+  color: white;
+  font-size: 2.5rem;
+}
+
+/* Image */
+.image {
+  width: 200px;
+  height: 200px;
+  box-shadow: 0px 0px 13px rgba(255, 255, 255, 0.5); /* Add shadow */
+}
+
+/* About text container */
+.abouttext {
+  gap: 25px;
+}
+
+/* Right side (text) */
+.right {
+  gap: 15px;
+}
+
+/* Paragraph styles */
+.right p {
+  padding: 13px;
+  font-size: 1.1rem;  /* Increase line height */
+  letter-spacing: 1px;
+  line-height: 25px;
+}
+
+  }
+
+
+
+@media screen and (max-width:500px) {
+
+  .about{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .image{
+    max-width: 200px;
+    max-height: 200px;
+  }
+
+  .about h2{
+    font-size: 1.5rem;
+  }
+    .abouttext p{
+        max-width: 350px;
+        font-size: 0.9rem;
+        margin: 10px;
+        text-wrap: wrap;
+        
+
+    }
+
+    
+    
+}
