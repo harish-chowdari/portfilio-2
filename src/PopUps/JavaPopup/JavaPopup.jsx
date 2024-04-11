@@ -1,19 +1,28 @@
-import React from 'react'
-import Design from "./JavaPopup.module.css"
+import React from 'react';
+import "./JavaPopup.css"
 
+const JavaPopup = ({ openJava, handleClose, text }) => {
+    if (!openJava) return null;
 
-const JavaPopup = ({handleClose}) => {
-  return (
-    <div className={Design.popup}>
-      <h3>Java</h3>
-      
-      <div>
-        <p>Created by : James Gosling</p>
-        <p>Year : 1995</p>
-      </div>
-      <button onClick={handleClose}>Close</button>
-    </div>
-  )
-}
+    const Close = () => {
+        document.querySelector('.popup-content').style.animation = 'slideOutToBottomLeft 0.33s ease-in-out forwards';
+        setTimeout(handleClose, 600); // Wait for animation to finish before closing
+    };
 
-export default JavaPopup
+    return (
+        <div className={`popup-overlay ${openJava ? 'active' : ''}`}>
+            
+            <div className="popup-content">
+              <h3>Java</h3>
+              <div className='data'>
+                <p><strong>Created by :</strong> James Gosling</p>
+                <p><strong>Year :</strong> 1995</p>
+              </div>
+            <button className="close-btn" onClick={Close}>&times;</button>
+                
+            </div>
+        </div>
+    );
+};
+
+export default JavaPopup;

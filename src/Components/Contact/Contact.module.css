@@ -80,4 +80,159 @@
     margin-left: 30px;
 }
 
+
+
+
+
+
+
+
+@media screen and (max-width: 1024px) {
+   
+    
+  
+    
+    .main h1{
+        text-align: center;
+        margin: 20px;
+        margin-top: 30px;
+        color: white;
+    }
+    
+    
+    .contact{
+        padding: 30px 0px;
+        gap: 18px;
+    } 
+    
+    
+    
+    .TextFields{
+        gap: 18px;
+        
+    }
+   
+    
+    
+    .textAreaWrapper{
+        width: 55%;
+    }   
+    
+    .errorMessage{
+        margin-left: 25px;
+    }
+    
+}
+    
+    
+    
+    
+@media screen and (max-width: 768px) {
+   
+    
+    .container{
+        padding-left: 20%;
+    }
+    
+    .main h1{
+        font-size: 1.7rem;
+    }
+    
+    
+    .contact{
+        padding: 30px 0px;   
+        gap: 15px;
+    } 
+    
+    
+    
+    .TextFields{
+        gap: 15px;
+        
+    }
+    
+    .NameField{
+        width: 120%;
+    }
+    
+    .emailField{
+        width: 120%;
+        
+    }
+    
+    
+    .textAreaWrapper{
+        width: 70%;
+    }
+    
+    .textAreaField{
+        height: 20vh;
+        font-size: 1rem;
+    }
+    
+    .errorMessage{
+        font-size: 0.75rem;
+        margin-left: 20px;
+    }
+
+}
+    
+    
+    
+      
+@media screen and (max-width: 500px) {
+    .container{
+        padding-left: 5%;
+    }
+    
+    .main h1{
+        font-size: 1.5rem;
+    }
+    
+    
+    .contact{
+        padding: 15px 0px;   
+        gap: 13px;
+        padding-bottom: 40px;
+    } 
+    
+    
+    
+    .TextFields{
+        gap: 15px;
+        width: 100%;
+        
+    }
+    
+    .NameField{
+        width: 95%;
+    }
+    
+    .emailField{
+        width: 95%;
+        
+    }
+    
+    
+    .textAreaWrapper{
+        width: 95%;
+    }
+    
+    .textAreaField{
+        height: 22vh;
+        font-size: 1rem;
+    }
+    
+    .errorMessage{
+        font-size: 0.85rem;
+        margin-left: 15px;
+    }
+
+  .button{
+    margin: 5px auto;
+  }
+
+}
+      
+
   

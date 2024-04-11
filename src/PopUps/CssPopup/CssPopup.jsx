@@ -6,7 +6,12 @@ import Design from "./CssPopup.module.css"
 const CssPopup = ({handleClose}) => {
   return (
     <div>
-      <div>CssPopup</div>
+    <h3>CSS</h3>
+      
+      <div>
+        <p>Created by : </p>
+        <p>Year : </p>
+      </div>
       <button onClick={handleClose}>Close</button>
     </div>
   )

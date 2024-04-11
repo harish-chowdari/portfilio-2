@@ -42,11 +42,64 @@
 }
 
 
+
+@media screen and (max-width:1024px) {
+    .skills{
+        padding: 40px 0px;
+    }
+    
+    .icons{
+        padding-top: 45px;
+        gap: 30px;
+        
+    
+    }
+    
+    .icondiv{
+    }
+    
+    .icondiv svg{
+        border-radius: 17%;
+        width: 80px;
+        height: 80px;
+    }
+
+}
+
+
+@media screen and (max-width:768px) {
+    .skills{
+        padding: 35px 0px;
+    }
+
+    .skills h1{
+        font-size: 1.7rem;
+    }
+    
+    .icons{
+        padding-top: 40px;
+        gap: 25px;
+        
+    
+    }
+    
+    .icondiv svg{
+        border-radius: 15%;
+        width: 70px;
+        height: 70px;
+    }
+
+}
+
     
 
 @media screen and (max-width:500px) {
     .skills{
         padding: 40px 0px;
+    }
+
+    .skills h1{
+        font-size: 1.5rem;
     }
     
     .icons{
@@ -58,11 +111,11 @@
         justify-content: space-evenly;
         
     
-    }
+    } 
     
     .icondiv{
         gap: 5px;
-        margin-bottom: 20px;
+        margin-bottom: 35px;
         width: 100px;
     }
     
@@ -74,10 +127,10 @@
         display: flex;
         align-items: center;
         
-    }
+    } 
 
     .icondiv p{
-        font-size: 0.9rem;
+        font-size: 0.95rem;
     }
     
 }

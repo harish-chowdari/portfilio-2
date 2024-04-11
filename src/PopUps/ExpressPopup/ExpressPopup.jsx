@@ -3,9 +3,17 @@ import Design from "./ExpressPopup.module.css"
 
 
 
-const ExpressPopup = () => {
+const ExpressPopup = ({handleClose}) => {
   return (
-    <div>ExpressPopup</div>
+    <div>
+    <h3>Express JS</h3>
+      
+      <div>
+        <p>Created by : </p>
+        <p>Year : </p>
+      </div>
+      <button onClick={handleClose}>Close</button>
+    </div>
   )
 }
 

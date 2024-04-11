@@ -2,9 +2,17 @@ import React from 'react'
 import Design from "./NodePopup.module.css"
 
 
-const NodePopup = () => {
+const NodePopup = ({handleClose}) => {
   return (
-    <div>NodePopup</div>
+    <div>
+    <h3>Node JS</h3>
+      
+      <div>
+        <p>Created by : </p>
+        <p>Year : </p>
+      </div>
+      <button onClick={handleClose}>Close</button>
+    </div>
   )
 }
 
