@@ -174,6 +174,7 @@ function Contact() {
       <Button className={Design.button} 
           type="submit" 
           variant="contained" 
+          
           sx={{ backgroundColor: textColor }}>
         Submit Form
       </Button>

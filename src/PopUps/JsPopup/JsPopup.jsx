@@ -1,20 +1,24 @@
 import React from 'react';
-import "./JsPopup.css"
 
+const JsPopup = ({ openJs, handleClose }) => {
+    if (!openJs) return null;
 
-const JsPopup = ({ isOpen, close, text }) => {
-    if (!isOpen) return null;
-
-    const handleClose = () => {
+    const Close = () => {
         document.querySelector('.popup-content').style.animation = 'slideOutToBottomLeft 0.33s ease-in-out forwards';
-        setTimeout(close, 600); // Wait for animation to finish before closing
+        setTimeout(handleClose, 600); 
     };
 
     return (
-        <div className={`popup-overlay ${isOpen ? 'active' : ''}`}>
+        <div className={`popup-overlay ${openJs ? 'active' : ''}`}>
+            
             <div className="popup-content">
-                <button className="close-btn" onClick={handleClose}>&times;</button>
-                <p>{text}</p>
+              <h3>JavaScript</h3>
+              <div className='data'>
+                <p><strong>Created by :</strong> </p>
+                <p><strong>Year :</strong> </p>
+              </div>
+            <button className="close-btn" onClick={Close}>&times;</button>
+                
             </div>
         </div>
     );

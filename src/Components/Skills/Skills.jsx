@@ -4,8 +4,7 @@ import JavaPopup from '../../PopUps/JavaPopup/JavaPopup'
 import ReactPopup from '../../PopUps/ReactPopup/ReactPopup'
 import NodePopup from '../../PopUps/NodePopup/NodePopup'
 import HtmlPopup from '../../PopUps/HtmlPopup/HtmlPopup'
-import CssPopup from '../../PopUps/CssPopup/CssPopup'
-
+import CssPopup from '../../PopUps/CSSPopup/CSSPopup'
 import JsPopup from "../../PopUps/JsPopup/JsPopup"
 import ExpressPopup from '../../PopUps/ExpressPopup/ExpressPopup'
 import MongoPopup from "../../PopUps/MongoPopup/MongoPopup"
@@ -233,15 +232,15 @@ const Skills = () => {
         </div>
 
         {openJava && <JavaPopup handleClose={handleClose} openJava={openJava}  />}
-        {openReact && <ReactPopup handleClose={handleClose}  />}
-        {openNode && <NodePopup handleClose={handleClose} />}
-        {openHtml && <HtmlPopup handleClose={handleClose} />}
-        {openCss && <CssPopup handleClose={handleClose} />}
+        {openReact && <ReactPopup handleClose={handleClose}  openReact={openReact} />}
+        {openNode && <NodePopup handleClose={handleClose} openNode={openNode} />}
+        {openHtml && <HtmlPopup handleClose={handleClose} openHtml={openHtml} />}
+        {openCss && <CssPopup handleClose={handleClose} openCss={openCss}/>}
         
-        {openJs && <JsPopup handleClose={handleClose} /> }
-        {openExpress && <ExpressPopup handleClose={handleClose}  />}
-        {openMongo && <MongoPopup handleClose={handleClose}  />}
-        {openTail && <TailPopup handleClose={handleClose}  />}
+        {openJs && <JsPopup handleClose={handleClose} openJs={openJs} /> }
+        {openExpress && <ExpressPopup handleClose={handleClose} openExpress={openExpress} />}
+        {openMongo && <MongoPopup handleClose={handleClose} openMongo={openMongo}  />}
+        {openTail && <TailPopup handleClose={handleClose} openTail={openTail} />}
 
     </div>
   )

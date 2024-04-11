@@ -2,7 +2,7 @@
     display: flex;
     justify-content: space-around;
     align-items: center;
-    padding: 50px 0px;
+    padding: 60px 0px;
     background-color: rgb(17, 16, 16);
     border-bottom: 1px solid rgb(70, 67, 67);
   }
@@ -198,7 +198,7 @@
 @media screen and (max-width: 768px) {
       
   .hero {
-    padding: 20px 0px;
+    padding: 40px 0px;
     flex-direction: column-reverse;
     padding-top: 55px;
     

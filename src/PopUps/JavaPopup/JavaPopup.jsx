@@ -6,7 +6,7 @@ const JavaPopup = ({ openJava, handleClose, text }) => {
 
     const Close = () => {
         document.querySelector('.popup-content').style.animation = 'slideOutToBottomLeft 0.33s ease-in-out forwards';
-        setTimeout(handleClose, 600); // Wait for animation to finish before closing
+        setTimeout(handleClose, 600); 
     };
 
     return (

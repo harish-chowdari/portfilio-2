@@ -11,8 +11,8 @@ const Hero = () => {
     words: ["Harish Nagubadi", "Web Developer"],
     loop:{},
     typeSpeed:140,
-    deleteSpeed:100,
-    delaySpeed:100
+    deleteSpeed:50,
+    delaySpeed:1250
     
   })
   
@@ -20,7 +20,7 @@ const Hero = () => {
   const handleDownloadResume = () => {
     const link = document.createElement('a');
     link.href = resumeFile;
-    link.download = 'Harish_Resume.pdf'; // Set the filename for the downloaded file
+    link.download = 'Harish_Resume.pdf'; 
     document.body.appendChild(link);
     link.click();
     document.body.removeChild(link);
@@ -31,7 +31,7 @@ const Hero = () => {
 
       <div className={Design.left}>
 
-        <h1>I am, </h1>
+        <h4 style={{color:"white"}}>I am, </h4>
         
         <div className={Design.type}>
         <h1> 

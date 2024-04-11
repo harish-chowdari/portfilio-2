@@ -3,7 +3,7 @@
     justify-content: center;
     flex-direction: column;
     align-items: center;
-    padding: 50px 0px;
+    padding: 60px 0px;
     background-color: rgb(17, 16, 16);
     color: white;
     border-top: 1px solid gray;
@@ -40,19 +40,14 @@
     background-color: rgb(68, 66, 66);
     cursor: pointer;
 }
-
+ 
 
 
 @media screen and (max-width:1024px) {
-    .skills{
-        padding: 40px 0px;
-    }
     
     .icons{
         padding-top: 45px;
         gap: 30px;
-        
-    
     }
     
     .icondiv{
@@ -69,7 +64,7 @@
 
 @media screen and (max-width:768px) {
     .skills{
-        padding: 35px 0px;
+        padding: 40px 0px;
     }
 
     .skills h1{
@@ -94,9 +89,6 @@
     
 
 @media screen and (max-width:500px) {
-    .skills{
-        padding: 40px 0px;
-    }
 
     .skills h1{
         font-size: 1.5rem;
@@ -104,18 +96,16 @@
     
     .icons{
         padding: 0px 10px;
-        padding-top: 40px;
-        
+        padding-top: 30px;
         gap: 0px;
         max-width: 500px;
-        justify-content: space-evenly;
-        
-    
+        justify-content: space-evenly;  
+        row-gap: 40px;  
     } 
     
     .icondiv{
         gap: 5px;
-        margin-bottom: 35px;
+        margin-bottom: 4px;
         width: 100px;
     }
     

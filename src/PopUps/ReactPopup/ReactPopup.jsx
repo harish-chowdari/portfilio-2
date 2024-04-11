@@ -1,20 +1,27 @@
-import React from 'react'
-import Design from "./ReactPopup.module.css"
+import React from 'react';
 
+const ReactPopup = ({ openReact, handleClose }) => {
+    if (!openReact) return null;
 
+    const Close = () => {
+        document.querySelector('.popup-content').style.animation = 'slideOutToBottomLeft 0.33s ease-in-out forwards';
+        setTimeout(handleClose, 600); 
+    };
 
-const ReactPopup = ({handleClose}) => {
-  return (
-    <div className={Design.popup}>
-      <h3>React Js</h3>
-      
-      <div>
-        <p>Created by : James Gosling</p>
-        <p>Year : 1995</p>
-      </div>
-      <button onClick={handleClose}>Close</button>
-    </div>
-  )
-}
+    return (
+        <div className={`popup-overlay ${openReact ? 'active' : ''}`}>
+            
+            <div className="popup-content">
+              <h3>React JS</h3>
+              <div className='data'>
+                <p><strong>Created by :</strong> </p>
+                <p><strong>Year :</strong> </p>
+              </div>
+            <button className="close-btn" onClick={Close}>&times;</button>
+                
+            </div>
+        </div>
+    );
+};
 
-export default ReactPopup
+export default ReactPopup;

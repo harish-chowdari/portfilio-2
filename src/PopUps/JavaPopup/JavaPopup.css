@@ -28,7 +28,7 @@
     border-radius: 10px;
     box-shadow: 0 12px 24px rgba(0, 0, 0, 0.15);
     width: 90%;
-    opacity: 0.7;
+    opacity: 1;
     max-width: 450px;
     text-align: center;
     transition: transform 0.3s ease-in-out;
@@ -100,3 +100,123 @@
       transform: scale(0) 
     }
   }
+
+
+
+
+@media screen and (max-width:1024px) {
+
+  .popup-content {
+    padding: 20px 40px;
+    border-radius: 10px;
+  }
+  
+  
+
+  .popup-overlay h3{
+    font-size: 1.5rem;
+}
+
+  
+.popup-content p {
+    color: #202020;
+    margin: 0px;
+  }
+   
+
+
+.popup-content strong{
+    font-size: 1.1rem;
+}
+
+.data{
+    margin-top: 20px;
+    gap: 10px;
+}
+  
+  .close-btn {
+    top: 15px;
+    right: 15px;
+    font-size: 35px;
+  }
+  
+}
+
+
+
+@media screen and (max-width:768px) {
+
+  .popup-content {
+    padding: 15px 30px;
+    border-radius: 8px;
+  }
+  
+  
+
+  .popup-overlay h3{
+    font-size: 1.4rem;
+}
+   
+
+
+.popup-content strong{
+    font-size: 1.1rem;
+}
+
+.data{
+    margin-top: 15px;
+    gap: 10px;
+}
+  
+  .close-btn {
+    top: 5px;
+    right: 15px;
+    font-size: 30px;
+  }
+  
+}
+
+
+
+
+@media screen and (max-width:500px) {
+
+  .popup-content {
+    max-width: 350px;
+    padding: 13px 20px;
+    border-radius: 5px;
+    width: 75%;
+  }
+  
+  
+
+  .popup-overlay h3{
+    font-size: 1.3rem;
+}
+
+  
+.popup-content p {
+    color: #202020;
+    margin: 0px;
+  }
+   
+
+
+.popup-content strong{
+    font-size: 1.1rem;
+}
+
+.data{
+    margin-top: 13px;
+    gap: 10px;
+}
+  
+  .close-btn {
+    top: 5px;
+    right: 10px;
+    font-size: 30px;
+  }
+  
+}
+
+
